@@ -1,0 +1,31 @@
+{
+	"type": "object",
+	"description": "A representation of a purchase",
+	"id": "urn:jsonschema:com:tapiax:metrics:model:Purchase",
+	"required": [
+		"productId",
+		"name",
+		"price",
+		"quantity",
+		"transactionTimestamp"
+	],
+	"properties": {
+		"productId": {
+			"type": "string",
+			 "minLength": 1
+		},
+		"name": {
+			"type": "string",
+			 "minLength": 1
+		},
+		"price": {
+			"type": "number"
+		},
+		"quantity": {
+			"type": "number"
+		},
+		"transactionTimestamp":{
+			"type": "number"
+		}
+	}
+}
